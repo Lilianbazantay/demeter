@@ -1,0 +1,10 @@
+--- CSFML/src/SFML/Graphics/RenderWindow.cpp	2023-12-17 01:35:06.597114925 +0100
++++ CSFML/src/SFML/Graphics/RenderWindow.cpp	2023-12-17 01:35:06.597114925 +0100
+@@ -47,6 +47,7 @@
+ ////////////////////////////////////////////////////////////
+ sfRenderWindow* sfRenderWindow_create(sfVideoMode mode, const char* title, sfUint32 style, const sfContextSettings* settings)
+ {
++    printf("%s", "[CSFML] using debug lib\n");
+     // Convert video mode
+     sf::VideoMode videoMode(mode.width, mode.height, mode.bitsPerPixel);
+ 
